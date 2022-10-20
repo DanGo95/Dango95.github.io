@@ -1,0 +1,22 @@
+<div class="col-lg-5 col-md-8 col-sm-12 col-12 mx-auto overflow-hidden" id="contact">
+  <div data-aos="flip-up" data-aos-duration="600" data-aos-anchor-placement="bottom-bottom" class="card p-5 border-0 my-3">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <p class="fs-4 fw-bold text-uppercase text-center mb-5 text-black">Contactame</p>
+      <div class="mb-3">
+        <input type="name" id="name" class="form-control form-control-lg px-4 py-1" formControlName="name" [class.is-invalid]="invalidInput('name')" placeholder="Nombre">
+        <p *ngIf="invalidInput('name')" class="text-danger text-center">El nombre es obligatorio</p>
+    </div>
+      <div class="mb-3">
+        <input type="email" id="email" class="form-control form-control-lg px-4 py-1" formControlName="email" [class.is-invalid]="invalidInput('email')" placeholder="Email">
+        <p *ngIf="invalidInput('email')" class="text-danger text-center">El email es obligatorio</p>
+      </div>
+      <div class="mb-3">
+        <textarea name="message" class="form-control form-control-lg px-4 py-1" formControlName="message" [class.is-invalid]="invalidInput('message')" cols="30" rows="3"></textarea>
+        <p *ngIf="invalidInput('message')" class="text-danger text-center">El mensaje es obligatorio</p>
+      </div>
+      <div class="d-grid gap-2">
+        <button type="submit" class="btn purple-button btn-rounded p-3 fw-bold text-uppercase mt-3">enviar mensaje</button>
+      </div>
+    </form>
+  </div>
+</div>

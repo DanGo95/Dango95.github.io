@@ -1,0 +1,28 @@
+<div class="row mt-5" id="projects">
+  <div class="col-md-12 col-lg-8 col-12 mx-auto mt-5">
+    <h2 class="text-center mt-5">
+      Proyectos
+    </h2>
+  </div>
+</div>
+<div class="row mt-5">
+  <div *ngFor="let project of projects$ | async"  data-aos="zoom-in" data-aos-duration="900" data-aos-anchor-placement="center-bottom" class="col-12 col-md-6 mb-3 mx-auto">
+    <div class="card w-100 h-100 border-0 shadow">
+      <img src="{{project.image}}" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title text-center">{{project.name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted text-center">
+          <a href="{{project.url}}" class="text-decoration-none text-purple" target="_blank">Demo</a>
+          {{project.auth}}
+        </h6>
+        <h6 class="card-subtitle mb-2 text-muted text-center">
+          <a href="{{project.repo}}" class="text-decoration-none text-purple" target="_blank">Github Repo</a>
+        </h6>
+        <hr class="w-75 mx-auto">
+        <p class="card-text text-center">
+          {{project.description}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="row" id="education">
+  <div class="col-md-12 col-lg-8 col-12 mx-auto mt-5">
+    <h2 class="text-center mt-5">
+      Educación
+    </h2>
+  </div>
+</div>
+<div *ngFor="let education of educations$ | async" class="row overflow-hidden mt-5">
+  <div class="col-lg-8 col-md-12 col-12 mx-auto">
+    <div class="row border">
+      <div data-aos="fade-right" data-aos-duration="600" data-aos-anchor-placement="bottom-bottom" class="col-lg-4 col-md-4 col-12 p-5 align-middle purple-bg">
+        <p class="text-center">
+          {{education.year}}
+        </p>
+        <p class="text-center fs-4 fw-bolder">
+          {{education.type}}
+        </p>
+      </div>
+      <div data-aos="fade-left" data-aos-duration="600" data-aos-anchor-placement="bottom-bottom" class="col-lg-8 col-md-8 col-12 p-5 align-middle">
+        <p class="text-center fs-4">
+          {{education.title}}
+        </p>
+        <p class="text-center fs-5">
+          {{education.place}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

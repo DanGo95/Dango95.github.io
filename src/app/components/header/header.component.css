@@ -1,0 +1,11 @@
+.transparent-header a {
+  color: white
+}
+
+.transparent-header a:hover {
+  opacity: 0.6;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+}

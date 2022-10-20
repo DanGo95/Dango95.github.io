@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+.intro {
+  background-image: url(/assets/images/banner-bg.jpg);
+}
+
+.purple-bg {
+  background-color: #a7539e;
+  color: white;
+  width:auto;
+}
+
+.purple-bg:hover {
+  background-color: #822a79;
+  color: white;
+}
+
+.text-purple {
+  color: #a7539e
+}
+
+.text-purple:hover {
+  color: #822a79
+}
+
+.navbar-bg {
+  background-color: #822a79;
+  color: white;
+}
