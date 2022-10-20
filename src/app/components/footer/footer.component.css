@@ -1,0 +1,41 @@
+.purple-button {
+  background-color: #a7539e;
+  color: white;
+}
+
+.purple-button:hover {
+  background-color: #a7539e;
+  color: black;
+}
+
+.transparent-footer a {
+  color: white
+}
+
+.transparent-footer a:hover {
+  opacity: 0.6;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+}
+
+
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+.btn-circle.btn-xl {
+  width: 60px;
+  height: 60px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+}

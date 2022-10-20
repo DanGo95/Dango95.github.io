@@ -10,6 +10,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { TrainingsComponent } from './trainings/trainings.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     EducationComponent,
     ProjectsComponent,
     SkillsComponent,
-    TrainingsComponent
+    TrainingsComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
