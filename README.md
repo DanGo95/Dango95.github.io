@@ -1,27 +1,33 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
+## Demo
 
-## Development server
+Ingrese a la dirección: https://dango95.github.io/ para ver una demostración del proyecto.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Uso del proyecto
 
-## Code scaffolding
+### Pre-requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Se necesita tener instalado:
+``` Node.js``` 
+``` Angular CLI``` 
 
-## Build
+### Instalación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para tener el proyecto funcionando, se deben ejecutar el siguiente comando dentro de la carpeta del mismo
 
-## Running unit tests
+```
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Luego, se puede iniciar el proyecto con el comando `ng serve` y acceder desde un navegador web a la dirección `http://localhost:4200/`.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Construido con
 
-## Further help
+El proyecto fue construido con las siguientes herramientas de desarrollo:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* [Visual Studio Code](https://code.visualstudio.com) - Editor de codigo fuente 
+* [Angular](https://angular.io/) - Framework para aplicaciones web desarrollado en TypeScript
+* [Firebase](https://firebase.google.com/?hl=es) - Plataforma para el desarrollo de aplicaciones web y aplicaciones móviles
+* [AngularFire](https://github.com/angular/angularfire) - Librería oficial de Angular para Firebase
