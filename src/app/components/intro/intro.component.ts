@@ -12,12 +12,10 @@ export class IntroComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.loading);
   }
 
   stopLoading( eventData: { loading: boolean } ) {
     this.loading = eventData.loading;
-    console.log(this.loading);
   }
 
 }
