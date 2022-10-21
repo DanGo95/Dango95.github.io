@@ -1,5 +1,10 @@
 <app-header></app-header>
-<div class="container-fluid">
+<div *ngIf="loading" class="row">
+  <div class="col mx-auto text-center mt-5">
+    <i class="fa-5x fas fa-spinner fa-spin"></i>
+  </div>
+</div>
+<div class="container-fluid" [ngClass]="loading ? 'loading' : 'not-loading'">
   <div class="row intro">
     <div class="col-12 mx-auto position-relative mt-5">
       <img src="/assets/images/portada.jpg" class="rounded img-fluid mx-auto d-block mt-5" width="200px">
@@ -26,9 +31,9 @@
     <app-about-me></app-about-me>
     <app-education></app-education>
     <app-trainings></app-trainings>
-    <app-projects></app-projects>
+    <app-projects (stopLoading)="stopLoading($event)"></app-projects>
   </div>
-  <!-- <app-skills></app-skills> -->
+  <app-skills></app-skills>
   <div class="row intro mt-5">
     <app-contact></app-contact>
   </div>
